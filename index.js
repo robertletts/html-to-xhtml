@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio';
 import * as xmlserializer from 'xmlserializer';
 import * as parse5 from 'parse5';
 
-const [INPUT_PATH] = process.argv.slice(1);
+const [INPUT_PATH] = process.argv.slice(2);
 
 // Uses cherio to set the `xmlns` attribute on the root element
 const $ = cheerio.load(readFileSync(INPUT_PATH, 'utf-8'));
@@ -15,7 +15,7 @@ $('html').attr('xmlns', 'http://www.w3.org/1999/xhtml');
 const dom = parse5.parse($.html());
 let result = xmlserializer.default.serializeToString(dom);
 
-// If -x flag is provided, clean the broken &gt; in the XML
+// If -x flag is provided, clean the broken > in the XML
 if (process.argv.includes('-x')) {
 	result = result.replace(new RegExp('&gt;', 'g'), '>');
 }
