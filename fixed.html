@@ -1,0 +1,35 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+    <link rel="stylesheet" href="/assets/asset.ec0ed08a.css" />
+
+    <style>
+        astro-root,
+        astro-fragment {
+            display: contents;
+        }
+    </style>
+    <script type="module" data-astro-component-hydration="" astro-script="//script-0">import setup from './entry.9f59b8ca.js';
+        import 'data:text/javascript;charset=utf-8,//[no before-hydration script]';
+        setup("Z1OxaE2", { name: "OnClient", value: true }, async () => {
+            const [{ default: Component }, { default: hydrate }] = await Promise.all([import("./entry.d394fd9f.js"), import("./entry.62132d18.js")]);
+            return (el, children) => hydrate(el)(Component, {}, children);
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>this is the astro test</h1>
+    <astro-root uid="Z1OxaE2">
+        <h2>This is a vue component, rendered as Vue</h2>
+    </astro-root>
+    <h2>This is a vue component, rendered as HTML</h2>
+
+
+</body>
+
+</html>
