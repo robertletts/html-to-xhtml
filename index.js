@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio';
 import * as xmlserializer from 'xmlserializer';
 import * as parse5 from 'parse5';
 
-const [INPUT_PATH, OUTPUT_PATH] = process.argv.slice(2);
+const [INPUT_PATH] = process.argv.slice(1);
 
 // Uses cherio to set the `xmlns` attribute on the root element
 const $ = cheerio.load(readFileSync(INPUT_PATH, 'utf-8'));
@@ -21,4 +21,4 @@ if (process.argv.includes('-x')) {
 }
 
 //  If no output is specified as a command line argument, defaults to overwrite input file
-writeFileSync(OUTPUT_PATH ? OUTPUT_PATH : INPUT_PATH, result);
+writeFileSync(INPUT_PATH, result);

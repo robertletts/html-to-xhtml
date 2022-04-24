@@ -1,18 +1,18 @@
 {
-  "name": "html-to-xhtml",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "bin": "./index.js",
-  "type": "module",
-  "keywords": [],
-  "author": "roblettsdev",
-  "license": "MIT",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.10",
-    "jsdom": "^19.0.0",
-    "parse5": "^6.0.1",
-    "xmlserializer": "^0.6.1"
-  }
+	"name": "html-to-xhtml",
+	"version": "1.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {},
+	"bin": "./index.js",
+	"type": "module",
+	"keywords": [],
+	"author": "roblettsdev",
+	"license": "MIT",
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.10",
+		"jsdom": "^19.0.0",
+		"parse5": "^6.0.1",
+		"xmlserializer": "^0.6.1"
+	}
 }
